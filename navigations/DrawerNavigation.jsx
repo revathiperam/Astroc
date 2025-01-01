@@ -6,6 +6,8 @@ import Header from '../components/Header'; // Import Header
 import Media from '../src/Media';
 import LoginScreen from '../src/authScreens/Login';
 import SignScreen from '../src/authScreens/Signup';
+import Gallery from '../src/Gallery';
+import ImageSlider from '../src/ImageSlider';
 
 
 const Drawer = createDrawerNavigator();
@@ -22,7 +24,8 @@ const DrawerNavigation = () => {
             <Drawer.Screen name="Login" component={LoginScreen} />
             <Drawer.Screen name="Signup" component={SignScreen} />
             <Drawer.Screen name="Media" component={Media} />
-
+            <Drawer.Screen name="Gallery" component={Gallery} />
+            <Drawer.Screen name="Slider" component={ImageSlider} />
 
         </Drawer.Navigator>
     );
